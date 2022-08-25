@@ -7,13 +7,13 @@ import {IoMdSkipForward, IoMdPlay, IoMdPause} from "react-icons/io"
 function App() {
   const [show, setShow] = useState(null)
   const [minutes, setMinutes] = useState(25)
-  const [seconds, setSeconds] = useState(0)
+  const [seconds] = useState(0)
 
   const [currentSeconds, setCurrentSeconds] = useState(seconds)
   const [currentMinutes, setCurrentMinutes] = useState(minutes)
 
   const [breakMinutes, setBreakMinutes] = useState(5)
-  const [breakSeconds, setBreakSeconds] = useState(0)
+  const [breakSeconds] = useState(0)
 
   const [toggleTimer, setToggleTimer] = useState(false)
 
@@ -192,7 +192,7 @@ function App() {
       <hr style={{backgroundColor: toggleCounter ? "#004EC2" : "#6FA90C", borderColor: toggleCounter ? "#004EC2" : "#6FA90C"}} />
       
         <h2 style={{color: toggleCounter ? "#004EC2" : "#6FA90C"}}>Sound</h2>
-        <label for="alarm-sound" style={{color: toggleCounter ? "#004EC2" : "#6FA90C"}}>Alarm Sound</label>
+        <label style={{color: toggleCounter ? "#004EC2" : "#6FA90C"}}>Alarm Sound</label>
         <select name="alarm-sound" className="alarm-sound" value={dropdownOption} onChange={(e) => setDropdownOption(e.target.value)} style={{borderColor: toggleCounter ? "#004EC2" : "#6FA90C"}}>
         <option value={"https://res.cloudinary.com/dgiqi5urn/video/upload/v1661364993/Pomodoro%20Clock/love_alarm_pk6lgm.mp3"}>Alarm</option>
           <option value={"https://res.cloudinary.com/dgiqi5urn/video/upload/v1661365210/Pomodoro%20Clock/violin_sqeymj.mp3"}>Strings</option>
