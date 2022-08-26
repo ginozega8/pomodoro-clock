@@ -184,11 +184,11 @@ padding-right: 20px;
     width: 100vw; 
   }
   .controls {
-    position: absolute;
+    position: fixed;
+    height: 55px;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 55px;
     width: 100vw;
     border-radius: 0;
     justify-items: center;
