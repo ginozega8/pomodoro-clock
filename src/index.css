@@ -157,8 +157,8 @@ padding-right: 20px;
 }
 
 @media screen and (max-width:1224px) {
-  body {
-    margin-bottom: 55px !important;
+  body{
+    margin: 0 0 55px 0 !important;
     background-color: #181819;
   }
   .container {
@@ -192,6 +192,7 @@ padding-right: 20px;
     width: 100vw;
     border-radius: 0;
     justify-items: center;
+    z-index: 99;
   }
   .settings{
     width: 100vw;
