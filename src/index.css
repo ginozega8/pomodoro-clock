@@ -68,7 +68,7 @@ button, select, option {
  .controls button {
   background: none;
   border: none;
-  transform: scale(2.0);
+  font-size: 30px;
   color: #A20707;
   transition: all 0.5s;
 
@@ -170,10 +170,10 @@ padding-right: 20px;
   #time-left{
     margin: 0;
     height: 100vh;
-    width: 110vw;
+    width: 113vw;
     margin: 0;
     padding: 0;
-    border-radius: 0;
+    border: none;
   }
   .time-left-title{
     width: 100vw;
@@ -186,6 +186,9 @@ padding-right: 20px;
   .controls {
     position: absolute;
     bottom: 0;
+    left: 0;
+    right: 0;
+    height: 55px;
     width: 100vw;
     border-radius: 0;
     justify-items: center;
@@ -194,6 +197,7 @@ padding-right: 20px;
     width: 100vw;
     height: 100vh;
     top: 0;
+    right: 0;
     left: 0;
   }
   .close-settings-button{
