@@ -7,7 +7,6 @@ body{
   width: 100%;
   top: 0%;
   display: flex;
-  margin-bottom: 55px;
   justify-content: center;
   margin: 0;
   padding: 0;
@@ -159,7 +158,7 @@ padding-right: 20px;
 
 @media screen and (max-width:1224px) {
   body {
-    margin-bottom: 55px;
+    margin-bottom: 55px !important;
     background-color: #181819;
   }
   .container {
